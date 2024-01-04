@@ -1,0 +1,125 @@
+﻿namespace MeuEstoque
+{
+    partial class Form1
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            panelMenu = new Panel();
+            buttonGerarRecibo = new Button();
+            buttonBuscar = new Button();
+            buttonAdicionar = new Button();
+            panelLogo = new Panel();
+            tabControl = new TabControl();
+            panelMenu.SuspendLayout();
+            SuspendLayout();
+            // 
+            // panelMenu
+            // 
+            panelMenu.Controls.Add(buttonGerarRecibo);
+            panelMenu.Controls.Add(buttonBuscar);
+            panelMenu.Controls.Add(buttonAdicionar);
+            panelMenu.Controls.Add(panelLogo);
+            panelMenu.Dock = DockStyle.Left;
+            panelMenu.Location = new Point(0, 0);
+            panelMenu.Name = "panelMenu";
+            panelMenu.Size = new Size(204, 495);
+            panelMenu.TabIndex = 0;
+            // 
+            // buttonGerarRecibo
+            // 
+            buttonGerarRecibo.Location = new Point(26, 266);
+            buttonGerarRecibo.Name = "buttonGerarRecibo";
+            buttonGerarRecibo.Size = new Size(153, 58);
+            buttonGerarRecibo.TabIndex = 3;
+            buttonGerarRecibo.Text = "Gerar Recibo";
+            buttonGerarRecibo.UseVisualStyleBackColor = true;
+            buttonGerarRecibo.Click += buttonGerarRecibo_Click;
+            // 
+            // buttonBuscar
+            // 
+            buttonBuscar.Location = new Point(26, 202);
+            buttonBuscar.Name = "buttonBuscar";
+            buttonBuscar.Size = new Size(153, 58);
+            buttonBuscar.TabIndex = 2;
+            buttonBuscar.Text = "Buscar Item";
+            buttonBuscar.UseVisualStyleBackColor = true;
+            buttonBuscar.Click += buttonBuscar_Click;
+            // 
+            // buttonAdicionar
+            // 
+            buttonAdicionar.Location = new Point(26, 138);
+            buttonAdicionar.Name = "buttonAdicionar";
+            buttonAdicionar.Size = new Size(153, 58);
+            buttonAdicionar.TabIndex = 1;
+            buttonAdicionar.Text = "Adicionar";
+            buttonAdicionar.UseVisualStyleBackColor = true;
+            buttonAdicionar.Click += buttonAdicionar_Click;
+            // 
+            // panelLogo
+            // 
+            panelLogo.BackColor = SystemColors.ControlDark;
+            panelLogo.Dock = DockStyle.Top;
+            panelLogo.Location = new Point(0, 0);
+            panelLogo.Name = "panelLogo";
+            panelLogo.Size = new Size(204, 105);
+            panelLogo.TabIndex = 0;
+            // 
+            // tabControl
+            // 
+            tabControl.Dock = DockStyle.Fill;
+            tabControl.Location = new Point(204, 0);
+            tabControl.Name = "tabControl";
+            tabControl.SelectedIndex = 0;
+            tabControl.Size = new Size(620, 495);
+            tabControl.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(824, 495);
+            Controls.Add(tabControl);
+            Controls.Add(panelMenu);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Controle De Estoque";
+            panelMenu.ResumeLayout(false);
+            ResumeLayout(false);
+        }
+
+        #endregion
+
+        private Panel panelMenu;
+        private Button buttonAdicionar;
+        private Panel panelLogo;
+        private TabControl tabControl;
+        private Button buttonBuscar;
+        private Button buttonGerarRecibo;
+    }
+}
