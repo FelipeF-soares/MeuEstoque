@@ -49,6 +49,10 @@ public class ControleEstoque
             if(sucesso)
             {
                 DiminuiEstoque();
+                Recibo recibo = new Recibo(_nomePagador, _nomeRecebedor, _secaoOrigem, _secaoDestino, _materialPago, _quantidadeRetirada);
+                GeraPDF geraPDF = new GeraPDF(recibo);
+                geraPDF.Materiais();
+                geraPDF.AbriArquivo();
                 return true;
             }
             else

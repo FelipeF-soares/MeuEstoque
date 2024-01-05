@@ -25,3 +25,5 @@ C:\github\MeuEstoque\MeuEstoque\obj\Release\net6.0-windows\refint\MeuEstoque.dll
 C:\github\MeuEstoque\MeuEstoque\obj\Release\net6.0-windows\MeuEstoque.pdb
 C:\github\MeuEstoque\MeuEstoque\obj\Release\net6.0-windows\MeuEstoque.genruntimeconfig.cache
 C:\github\MeuEstoque\MeuEstoque\obj\Release\net6.0-windows\ref\MeuEstoque.dll
+C:\github\MeuEstoque\MeuEstoque\bin\Release\net6.0-windows\BouncyCastle.Crypto.dll
+C:\github\MeuEstoque\MeuEstoque\bin\Release\net6.0-windows\itextsharp.dll

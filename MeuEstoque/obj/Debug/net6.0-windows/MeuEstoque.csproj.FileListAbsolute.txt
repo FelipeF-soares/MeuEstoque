@@ -25,3 +25,5 @@ C:\github\MeuEstoque\MeuEstoque\obj\Debug\net6.0-windows\MeuEstoque.csproj.Assem
 C:\github\MeuEstoque\MeuEstoque\obj\Debug\net6.0-windows\MeuEstoque.csproj.CopyComplete
 C:\github\MeuEstoque\MeuEstoque\obj\Debug\net6.0-windows\MeuEstoque.Views.UserControlPesquisar.resources
 C:\github\MeuEstoque\MeuEstoque\obj\Debug\net6.0-windows\MeuEstoque.Views.UserControlGerarRecibo.resources
+C:\github\MeuEstoque\MeuEstoque\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\github\MeuEstoque\MeuEstoque\bin\Debug\net6.0-windows\itextsharp.dll
