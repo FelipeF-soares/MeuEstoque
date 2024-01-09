@@ -72,4 +72,12 @@ public class ControleEstoque
         QueryDB queryDB = new QueryDB("Materiais");
         queryDB.AtualizarMaterial(_materialPago);
     }
+
+    public void AtualizarQuantidadeDeItem(Material material, int quantidade)
+    {
+        material.Quantidade += quantidade;
+        QueryDB queryDB = new QueryDB("Materiais");
+        queryDB.AtualizarMaterial(material);
+
+    }
 }

@@ -27,6 +27,6 @@ public class Recibo
 
     public override string ToString()
     {
-        return $"Seção {_secaoOrigem} \nO {_nomeRecebedor} recebeu dessa Seção o(s) Materiais abaixo descrito:\n{_materialPago.Nome} quantidade: {_quantidadeRetirada} unidade, descrição: {_materialPago.Descricao}\n com destino ao {_secaoDestino}.";
+        return $"Seção {_secaoOrigem} \nO {_nomeRecebedor} recebeu dessa Seção o Material abaixo descrito:\n{_materialPago.Nome} {_materialPago.Descricao} quantidade: {_quantidadeRetirada} unidades.\n com destino a Seção: {_secaoDestino}.";
     }
 }

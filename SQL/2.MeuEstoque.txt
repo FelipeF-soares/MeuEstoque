@@ -1,0 +1,11 @@
+CREATE TABLE [dbo].[Controle_Estoque] (
+    [Id]                 INT           IDENTITY (1, 1) NOT NULL,
+    [NomePagador]        VARCHAR (MAX) NOT NULL,
+    [NomeRecebedor]      VARCHAR (MAX) NOT NULL,
+    [SecaoOrigem]        VARCHAR (MAX) NOT NULL,
+    [SecaoDestino]       VARCHAR (MAX) NOT NULL,
+    [QuantidadeRetirada] INT           NOT NULL,
+    [MaterialPagoId]     INT           NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    FOREIGN KEY ([MaterialPagoId]) REFERENCES [dbo].[Materiais] ([Id])
+);

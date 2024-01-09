@@ -30,7 +30,7 @@
         {
             labelGerarRecibo = new Label();
             groupBoxPesquisar = new GroupBox();
-            textBoxQuantidade = new TextBox();
+            maskedTextBoxQuantidade = new MaskedTextBox();
             labelQunatidadeFornecida = new Label();
             buttonPesquisar = new Button();
             textBoxId = new TextBox();
@@ -68,7 +68,7 @@
             // groupBoxPesquisar
             // 
             groupBoxPesquisar.Anchor = AnchorStyles.None;
-            groupBoxPesquisar.Controls.Add(textBoxQuantidade);
+            groupBoxPesquisar.Controls.Add(maskedTextBoxQuantidade);
             groupBoxPesquisar.Controls.Add(labelQunatidadeFornecida);
             groupBoxPesquisar.Controls.Add(buttonPesquisar);
             groupBoxPesquisar.Controls.Add(textBoxId);
@@ -80,12 +80,14 @@
             groupBoxPesquisar.TabStop = false;
             groupBoxPesquisar.Text = "Digite o Id do material e quantidade que será fornecida";
             // 
-            // textBoxQuantidade
+            // maskedTextBoxQuantidade
             // 
-            textBoxQuantidade.Location = new Point(183, 55);
-            textBoxQuantidade.Name = "textBoxQuantidade";
-            textBoxQuantidade.Size = new Size(84, 23);
-            textBoxQuantidade.TabIndex = 4;
+            maskedTextBoxQuantidade.Location = new Point(189, 55);
+            maskedTextBoxQuantidade.Mask = "999999";
+            maskedTextBoxQuantidade.Name = "maskedTextBoxQuantidade";
+            maskedTextBoxQuantidade.Size = new Size(41, 23);
+            maskedTextBoxQuantidade.TabIndex = 10;
+            maskedTextBoxQuantidade.ValidatingType = typeof(int);
             // 
             // labelQunatidadeFornecida
             // 
@@ -318,7 +320,6 @@
         private GroupBox groupBox1;
         private TextBox textBoxNomePagador;
         private Label labelNomeRetirada;
-        private TextBox textBoxQuantidade;
         private Label labelQunatidadeFornecida;
         private TextBox textBoxSecao;
         private Label labelSecao;
@@ -326,5 +327,6 @@
         private TextBox textBoxRecebeMaterial;
         private Button buttonGerarRecibo;
         private Label labelRecebeId;
+        private MaskedTextBox maskedTextBoxQuantidade;
     }
 }

@@ -46,5 +46,14 @@ namespace MeuEstoque
             UserControlGerarRecibo userControl = new UserControlGerarRecibo();
             AdicionarTapPages(name, text, userControl);
         }
+
+        private void buttonRelatorioConsumo_Click(object sender, EventArgs e)
+        {
+            tabControl.TabPages.Clear();
+            string name = "tabPageRelatorioSaida";
+            string text = "Relatório De Controle de Saída";
+            UserControlRelatorioConsumo userControl = new UserControlRelatorioConsumo();
+            AdicionarTapPages(name,text, userControl);
+        }
     }
 }

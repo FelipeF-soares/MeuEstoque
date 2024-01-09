@@ -13,5 +13,8 @@
     <Compile Update="Views\UserControlPesquisar.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Views\UserControlRelatorioConsumo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

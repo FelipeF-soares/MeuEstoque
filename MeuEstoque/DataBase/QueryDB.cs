@@ -117,4 +117,18 @@ public class QueryDB
         
     }
 
+    public DataTable RelatorioDeSaídaDeMateriai()
+    {
+        string query = $"SELECT * FROM {_tabela}";
+        try
+        {
+            var table = localDB.SqlQuery(query);
+            return table;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+    }
+
 }

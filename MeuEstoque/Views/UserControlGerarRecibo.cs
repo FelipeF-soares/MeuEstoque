@@ -18,16 +18,22 @@ namespace MeuEstoque.Views
         public UserControlGerarRecibo()
         {
             InitializeComponent();
+            buttonGerarRecibo.Enabled = false;
+            maskedTextBoxQuantidade.TextChanged += TextBox_TextChanged;
+            textBoxId.TextChanged += TextBox_TextChanged;
+            textBoxNomePagador.TextChanged += TextBox_TextChanged;
+            textBoxRecebeMaterial.TextChanged += TextBox_TextChanged;
+            textBoxSecao.TextChanged += TextBox_TextChanged;
         }
 
         private void buttonGerarRecibo_Click(object sender, EventArgs e)
         {
 
-            string nomePagador = textBoxNomePagador.Text;
-            string nomeRecebedor = textBoxRecebeMaterial.Text;
+            string nomePagador = textBoxNomePagador.Text.ToUpper().Trim();
+            string nomeRecebedor = textBoxRecebeMaterial.Text.ToUpper().Trim();
             string secaoOrigem = "Telemática";
-            string secaoDestino = textBoxSecao.Text;
-            int quantidadeRetirada = Int32.Parse(textBoxQuantidade.Text);
+            string secaoDestino = textBoxSecao.Text.ToUpper().Trim();
+            int quantidadeRetirada = Int32.Parse(maskedTextBoxQuantidade.Text);
 
             ControleEstoque controleEstoque = new ControleEstoque();
             try
@@ -53,7 +59,6 @@ namespace MeuEstoque.Views
 
         private void buttonPesquisar_Click(object sender, EventArgs e)
         {
-
             string id = textBoxId.Text;
             try
             {
@@ -80,8 +85,18 @@ namespace MeuEstoque.Views
             textBoxNomePagador.Text = string.Empty;
             textBoxRecebeMaterial.Text = string.Empty;
             textBoxSecao.Text = string.Empty;
-            textBoxQuantidade.Text = string.Empty;
+            maskedTextBoxQuantidade.Text = string.Empty;
         }
+
+        private void TextBox_TextChanged(object sender, EventArgs e)
+        {
+            buttonGerarRecibo.Enabled = !string.IsNullOrEmpty(textBoxId.Text) &&
+                                        !string.IsNullOrEmpty(maskedTextBoxQuantidade.Text) &&
+                                        !string.IsNullOrEmpty(textBoxNomePagador.Text) &&
+                                        !string.IsNullOrEmpty(textBoxSecao.Text) &&
+                                        !string.IsNullOrEmpty(textBoxRecebeMaterial.Text);
+        }
+
 
     }
 }

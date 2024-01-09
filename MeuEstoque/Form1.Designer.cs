@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panelMenu = new Panel();
+            buttonRelatorioConsumo = new Button();
             buttonGerarRecibo = new Button();
             buttonBuscar = new Button();
             buttonAdicionar = new Button();
@@ -39,6 +40,7 @@
             // 
             // panelMenu
             // 
+            panelMenu.Controls.Add(buttonRelatorioConsumo);
             panelMenu.Controls.Add(buttonGerarRecibo);
             panelMenu.Controls.Add(buttonBuscar);
             panelMenu.Controls.Add(buttonAdicionar);
@@ -48,6 +50,16 @@
             panelMenu.Name = "panelMenu";
             panelMenu.Size = new Size(204, 495);
             panelMenu.TabIndex = 0;
+            // 
+            // buttonRelatorioConsumo
+            // 
+            buttonRelatorioConsumo.Location = new Point(26, 330);
+            buttonRelatorioConsumo.Name = "buttonRelatorioConsumo";
+            buttonRelatorioConsumo.Size = new Size(153, 58);
+            buttonRelatorioConsumo.TabIndex = 4;
+            buttonRelatorioConsumo.Text = "Gerar Relatorio De Consumo";
+            buttonRelatorioConsumo.UseVisualStyleBackColor = true;
+            buttonRelatorioConsumo.Click += buttonRelatorioConsumo_Click;
             // 
             // buttonGerarRecibo
             // 
@@ -121,5 +133,6 @@
         private TabControl tabControl;
         private Button buttonBuscar;
         private Button buttonGerarRecibo;
+        private Button buttonRelatorioConsumo;
     }
 }
