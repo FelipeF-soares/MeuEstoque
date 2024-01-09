@@ -3,7 +3,7 @@
 ## Descrição
 MeuEstoque é uma aplicação desenvolvida em Windows Form utilizando .NET 6 e C#. Inspirada na nostalgia das interfaces dos anos 90, especialmente nas janelas do Windows, esta aplicação é ideal para aqueles que compartilham do mesmo carinho por essa época. 
 ## Motivação
-Como entusiasta dos computadores dos anos 90, o desenvolvedor desta aplicação encontrou inspiração na simplicidade e familiaridade das interfaces daquela era. Embora possa parecer um tanto "cringey" para os jovens de hoje, a experiência do usuário proporciona uma sensação nostálgica e agradável para quem viveu a era dourada da computação. 
+Como entusiasta dos computadores dos anos 90, encontrei inspiração na simplicidade e familiaridade das interfaces daquela era. Embora possa parecer um tanto "cringey" para os jovens de hoje, a experiência do usuário proporciona uma sensação nostálgica e agradável para quem viveu a era dourada da computação. 
 ## Funcionalidades 
  ### 1. Adição de Itens ao Banco de Dados LocalDB 
  ![Adiciona](./Imagens/AdicionarItem.png)
