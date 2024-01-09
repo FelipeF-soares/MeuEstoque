@@ -53,7 +53,7 @@ namespace MeuEstoque
             string name = "tabPageRelatorioSaida";
             string text = "Relatório De Controle de Saída";
             UserControlRelatorioConsumo userControl = new UserControlRelatorioConsumo();
-            AdicionarTapPages(name,text, userControl);
+            AdicionarTapPages(name, text, userControl);
         }
     }
 }

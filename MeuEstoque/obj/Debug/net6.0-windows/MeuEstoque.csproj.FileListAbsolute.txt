@@ -58,3 +58,4 @@ C:\Users\f150030\Desktop\MeuEstoque\MeuEstoque\obj\Debug\net6.0-windows\MeuEstoq
 C:\Users\f150030\Desktop\MeuEstoque\MeuEstoque\obj\Debug\net6.0-windows\ref\MeuEstoque.dll
 C:\Users\f150030\Desktop\MeuEstoque\MeuEstoque\obj\Debug\net6.0-windows\MeuEstoque.Views.UserControlRelatorioConsumo.resources
 C:\github\MeuEstoque\MeuEstoque\obj\Debug\net6.0-windows\MeuEstoque.Views.UserControlRelatorioConsumo.resources
+C:\github\MeuEstoque\MeuEstoque\obj\Debug\net6.0-windows\MeuEstoque.Properties.Resources.resources

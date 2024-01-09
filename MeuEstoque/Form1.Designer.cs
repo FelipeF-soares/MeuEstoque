@@ -28,14 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panelMenu = new Panel();
             buttonRelatorioConsumo = new Button();
             buttonGerarRecibo = new Button();
             buttonBuscar = new Button();
             buttonAdicionar = new Button();
             panelLogo = new Panel();
+            pictureBox1 = new PictureBox();
             tabControl = new TabControl();
             panelMenu.SuspendLayout();
+            panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panelMenu
@@ -94,11 +98,22 @@
             // panelLogo
             // 
             panelLogo.BackColor = SystemColors.ControlDark;
+            panelLogo.Controls.Add(pictureBox1);
             panelLogo.Dock = DockStyle.Top;
             panelLogo.Location = new Point(0, 0);
             panelLogo.Name = "panelLogo";
             panelLogo.Size = new Size(204, 105);
             panelLogo.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(12, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(186, 99);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // tabControl
             // 
@@ -117,11 +132,14 @@
             Controls.Add(tabControl);
             Controls.Add(panelMenu);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Controle De Estoque";
             panelMenu.ResumeLayout(false);
+            panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -134,5 +152,6 @@
         private Button buttonBuscar;
         private Button buttonGerarRecibo;
         private Button buttonRelatorioConsumo;
+        private PictureBox pictureBox1;
     }
 }
